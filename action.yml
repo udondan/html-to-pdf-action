@@ -1,13 +1,13 @@
-name: "HTML to PDF"
-description: "Converts HTML file to PDF."
-author: "fifsky@gmail.com"
+name: HTML to PDF
+description: Converts HTML file to PDF.
+author: fifsky@gmail.com
 inputs:
   htmlFile:
-    description: "html file path"
+    description: html file path
     required: true
 
   outputFile:
-    description: "output file path"
+    description: output file path
     required: true
 
   pdfOptions:
@@ -19,9 +19,9 @@ inputs:
     default: "{}"
 
 runs:
-  using: "docker"
-  image: "Dockerfile"
+  using: docker
+  image: docker://udondan/html-to-pdf:1.0.0
 
 branding:
-  color: "blue"
-  icon: "file"
+  color: blue
+  icon: file
